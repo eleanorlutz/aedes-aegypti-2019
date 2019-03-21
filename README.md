@@ -1,10 +1,10 @@
 # Computational and experimental insights into the chemosensory navigation of *Aedes aegypti* mosquito larvae
 
-**Authors and Affiliations:** Eleanor K. Lutz<sup>1</sup>, Tjinder Grewal<sup>2</sup>, [Jeffrey A. Riffell](http://faculty.washington.edu/jriffell/)<sup>1†</sup>
+**Authors and Affiliations:** Eleanor K. Lutz<sup>a</sup>, Tjinder S. Grewal<sup>b</sup>, [Jeffrey A. Riffell](http://faculty.washington.edu/jriffell/)<sup>a†</sup>
 
-1. Department of Biology, University of Washington, Seattle, WA 98195, USA.
-2. Department of Bioengineering, University of Washington, Box 355061, Seattle, WA 98195, USA
-  - † To whom all correspondence should be addressed</sup>
+  - **a**. Department of Biology, University of Washington, Seattle, WA 98195, USA.
+  - **b**. Department of Biochemistry, University of Washington, Box 357350, Seattle, WA 98195, USA
+  - **†** To whom all correspondence should be addressed</sup>
 
 This paper was originally submitted to BioRxiv on March 21, 2019. Data collected and analyzed in this manuscript can currently be found in this [Google Drive folder](https://drive.google.com/drive/folders/1I2kDHNNdvXw6LSiaCOCeElc4iEj74Iu1?usp=sharing) and will be moved to a permanent repository during manuscript submission and review. A brief explanation or visualization of each code file is provided below.
 
