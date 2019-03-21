@@ -1,0 +1,75 @@
+%% File derived from elsarticle-template-1-num.tex
+%% A part of the Elsarticle Bundle. 
+%% Template file copyright: 2009 Elsevier Ltd
+%% Content copyright: 2019 Eleanor Lutz
+
+\documentclass[preprint,10pt,twocolumn]{elsarticle}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{lineno}
+\usepackage{floatrow}
+\usepackage{graphicx}
+% \usepackage[colorlinks=false]{hyperref}
+\usepackage{caption}
+\usepackage[font=footnotesize,labelfont=bf]{caption}
+\usepackage[hang,flushmargin]{footmisc}
+\usepackage{changepage}
+\usepackage{amsmath}
+\usepackage{ae,aecompl}
+\usepackage[table]{xcolor}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{gensymb}
+\usepackage{wasysym}
+
+\definecolor{bg}{RGB}{239, 239, 239}
+\definecolor{expyes}{RGB}{53,186,196}
+\definecolor{yes}{RGB}{59,207,218}
+\definecolor{no}{RGB}{249, 244, 237}
+
+\setlength{\columnsep}{0.5in}
+\captionsetup{justification=raggedright, singlelinecheck=false}
+\newcommand{\beginsupplement}{
+    \setcounter{table}{0}
+    \renewcommand{\thetable}{S\arabic{table}}
+    \setcounter{figure}{0}
+    \renewcommand{\thefigure}{S\arabic{figure}}} 
+
+\journal{biorxiv}
+\begin{document}
+
+%% ABSTRACT
+\input{Text_sections/abstract.tex}
+%% INTRODUCTION
+\input{Text_sections/introduction.tex}
+%% RESULTS
+\input{Text_sections/results.tex}
+%% DISCUSSION
+\input{Text_sections/discussion.tex}
+%% MATERIALS AND METHODS
+\input{Text_sections/materials_methods.tex}
+%% ACKNOWLEDGEMENTS AND CONTRIBUTIONS
+\input{Text_sections/acknowledgements.tex}
+
+%% REFERENCES
+\clearpage
+\nolinenumbers 
+\begin{flushleft}
+\bibliographystyle{elsarticle-num}
+\bibliography{Text_sections/references.bib}
+\end{flushleft}
+
+%% SUPPLEMENTARY MATERIALS
+\linenumbers
+\newpage \onecolumn \beginsupplement
+\nolinenumbers \section*{Supplementary materials}
+\normalsize
+\subsection*{Supplementary Data and Code}
+\noindent All code is available for download at \texttt{github.com/eleanorlutz/aedes-aegypti-2019}
+\subsection*{Supplementary Figures}
+\input{Figures/F_supp_figure1.tex}
+\input{Figures/F_supp_figure2.tex}
+\input{Figures/F_supp_figure3.tex}
+\input{Figures/F_supp_figure4.tex}
+\end{document}
+
+%% END OF FILE
