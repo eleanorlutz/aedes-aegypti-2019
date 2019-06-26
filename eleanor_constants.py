@@ -33,15 +33,6 @@ c_neutral = c_water
 c_averse = c_quinine
 c_attract = c_food
 
-# Modeling figures
-c_ortho = "#ef6bd0"
-c_chemo = "#4597f8"
-c_anosmic = c_grey
-c_klino = c_extract
-cmap_poison = lsc.from_list("cmap_poison", ["#ffffff", '#f5e98e'])
-cmap_food = lsc.from_list("cmap_food", ["#ffffff", '#dcd5bc'])
-cmap_food_2 = lsc.from_list("cmap_food", ["#ffffff", c_cresol])
-
 # Figure Supplemental 1
 c_female = "#f47d54"
 c_male = c_grey
@@ -51,7 +42,3 @@ c_starve = "#90b60e"
 c_fed = "#a07fb2"
 c_acclimate = c_grey
 c_neutral = "#859cbc"
-
-# Size comparisons arena
-key_sizes = [5, 9, 17, 20]
-key_labels = ["i", "ii", "iii", "iv"]

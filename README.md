@@ -6,7 +6,7 @@
   - **b**. Department of Biochemistry, University of Washington, Box 357350, Seattle, WA 98195, USA
   - **†** To whom all correspondence should be addressed</sup>
 
-This paper was originally submitted to BioRxiv on March 21, 2019. Data collected and analyzed in this manuscript can currently be found in this [Google Drive folder](https://drive.google.com/drive/folders/1I2kDHNNdvXw6LSiaCOCeElc4iEj74Iu1?usp=sharing) and will be moved to a permanent repository during manuscript submission and review. A brief explanation or visualization of each code file is provided below.
+This paper was originally submitted to BioRxiv on March 21, 2019, and was revised for an official submission to Proceedings of the Royal Society B on June 25, 2019. Data collected and analyzed in this manuscript can currently be found in this [Google Drive folder](https://drive.google.com/drive/folders/1I2kDHNNdvXw6LSiaCOCeElc4iEj74Iu1?usp=sharing) and will be moved to a permanent repository during manuscript submission and review. A brief explanation or visualization of each code file is provided below.
 
 ### Figure Generation Code:
 #### F_plot_figure_1.ipynb
@@ -24,9 +24,6 @@ This paper was originally submitted to BioRxiv on March 21, 2019. Data collected
 #### F_plot_figure_5.ipynb
 ![5](figures/uploads/readme/5.png)
 
-#### F_plot_figure_6.ipynb
-![6](figures/uploads/readme/6.png)
-
 #### F_plot_figure_S1.ipynb
 ![S1](figures/uploads/readme/S1.png)
 
@@ -35,9 +32,6 @@ This paper was originally submitted to BioRxiv on March 21, 2019. Data collected
 
 #### F_plot_figure_S3.ipynb
 ![S3](figures/uploads/readme/S3.png)
-
-#### F_plot_figure_S4.ipynb
-![S4](figures/uploads/readme/S4.png)
 
 
 ### Data Analysis Code:
@@ -101,17 +95,6 @@ This paper was originally submitted to BioRxiv on March 21, 2019. Data collected
 #### 6_combine_trajectory_data_for_modeling.ipynb
 - Output 4 dataframe combining all animal trajectories: Fed animals acclimation phase, Fed animals experiment phase, Starved animals acclimation phase, and Starved animals experiment phase
 
-#### 7_run_models.ipynb
+#### 7_run_model.ipynb
 - Run simulation tasks using empirical data from starved animals
 - Run simulation tasks using empirical data from fed animals
-
-#### 8_analyze_model_success.ipynb
-- Compare the amount of time (minutes) taken by each simulated strategy to find food
-- Compare the amount of time (% total) each search strategy simulation spent in areas of high toxin concentration
-- Compare simulations run using data from starved animals and data from fed animals: Foraging task
-- Compare simulations run using data from starved animals and data from fed animals: Toxin avoidance task
-
-### Manuscript Preparation Code:
-#### latex_manuscript
-
-![manuscript](figures/uploads/readme/manuscript_preview.jpg)
