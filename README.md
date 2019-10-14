@@ -6,33 +6,9 @@
   - **b**. Department of Biochemistry, University of Washington, Box 357350, Seattle, WA 98195, USA
   - **†** To whom all correspondence should be addressed</sup>
 
-This paper was originally submitted to BioRxiv on March 21, 2019, and was revised for an official submission to Proceedings of the Royal Society B on June 25, 2019. Data collected and analyzed in this manuscript can currently be found in this [Google Drive folder](https://drive.google.com/drive/folders/1I2kDHNNdvXw6LSiaCOCeElc4iEj74Iu1?usp=sharing) and will be moved to a permanent repository during manuscript submission and review. A brief explanation or visualization of each code file is provided below.
+This paper was originally submitted to BioRxiv on March 21, 2019, and was revised for an official submission to Proceedings of the Royal Society B on June 25, 2019. Comments from two anonymous reviewers were received on July 29, 2019, and the manuscript was revised with additional experiments and resubmitted on October 14, 2019. Both the initial submission and revised manuscript are available in the `manuscript` folder. 
 
-### Figure Generation Code:
-#### F_plot_figure_1.ipynb
-![1](figures/uploads/readme/1.png)
-
-#### F_plot_figure_2.ipynb
-![2](figures/uploads/readme/2.png)
-
-#### F_plot_figure_3.ipynb
-![3](figures/uploads/readme/3.png)
-
-#### F_plot_figure_4.ipynb
-![4](figures/uploads/readme/4.png)
-
-#### F_plot_figure_5.ipynb
-![5](figures/uploads/readme/5.png)
-
-#### F_plot_figure_S1.ipynb
-![S1](figures/uploads/readme/S1.png)
-
-#### F_plot_figure_S2.ipynb
-![S2](figures/uploads/readme/S2.png)
-
-#### F_plot_figure_S3.ipynb
-![S3](figures/uploads/readme/S3.png)
-
+Data collected and analyzed in this manuscript can currently be found in this [Google Drive folder](https://drive.google.com/drive/folders/1I2kDHNNdvXw6LSiaCOCeElc4iEj74Iu1?usp=sharing) and will be moved to a permanent repository during manuscript submission and review. A brief explanation or visualization of each code file is provided below.
 
 ### Data Analysis Code:
 #### 0_inspect_data.ipynb
