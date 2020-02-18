@@ -1,4 +1,7 @@
 # Computational and experimental insights into the chemosensory navigation of *Aedes aegypti* mosquito larvae
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](http://doge.mit-license.org)
+[![Data License: CC0-1.0](https://img.shields.io/badge/Data%20License-CC0--1.0-lightgrey)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
 **Authors and Affiliations:** Eleanor K. Lutz<sup>a</sup>, Tjinder S. Grewal<sup>b</sup>, [Jeffrey A. Riffell](http://faculty.washington.edu/jriffell/)<sup>a†</sup>
 
@@ -6,18 +9,16 @@
   - **b**. Department of Biochemistry, University of Washington, Box 357350, Seattle, WA 98195, USA
   - **†** To whom all correspondence should be addressed</sup>
 
-This paper was originally submitted to BioRxiv on March 21, 2019, and was revised for an official submission to Proceedings of the Royal Society B on June 25, 2019. Comments from two anonymous reviewers were received on July 29, 2019, and the manuscript was revised with additional experiments and resubmitted on October 14, 2019. Both the initial submission and revised manuscript are available in the `manuscript` folder. 
+All data for this manuscript (including raw video files and trajectories) can be downloaded from this [Dryad repository](https://datadryad.org/stash/dataset/doi:10.5061/dryad.s1rn8pk3n), licensed under a [CC0 1.0 Universal (CC0 1.0) Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/) license. Code used to analyze and visualize the data is provided here in this Github repository under the [MIT license](https://choosealicense.com/licenses/mit/). A brief explanation or visualization of each code file is provided below.
 
-Data collected and analyzed in this manuscript can currently be found in this [Google Drive folder](https://drive.google.com/drive/folders/1I2kDHNNdvXw6LSiaCOCeElc4iEj74Iu1?usp=sharing) and will be moved to a permanent repository during manuscript submission and review. A brief explanation or visualization of each code file is provided below.
+This paper was originally submitted to BioRxiv on March 21, 2019, and was revised for an official submission to Proceedings of the Royal Society B on June 25, 2019. Comments from two anonymous reviewers were received on July 29, 2019, and the manuscript was revised with additional experiments and resubmitted on October 14, 2019. All four versions are available in the `manuscript` folder. 
 
 ### Data Analysis Code:
 #### 0_inspect_data.ipynb
 - Remove dead larvae and experiments that were accidentally begun before the larval daylight cycle.
 - Convert experiment start time to number of minutes elapsed since light cycle ON time
-- Save cleaned dataset in a new `CSV` file.
 - Check that the number of fed and starved animals in each experiment adds up to the total number of animals.
-- Output the number of animals in each experiment (total) and the number of fed and starved animals for each experiment as a TXT file
-- Check that each experiment larva has one video HDF5 file and one folder
+- Check that each experiment larva has one video HDF5 file and one data folder
 
 #### 1_convert_hdf5_to_csv.ipynb
 - Translate Multitracker hdf5 files into Pandas dataframes and save to CSV
@@ -26,7 +27,7 @@ Data collected and analyzed in this manuscript can currently be found in this [G
 - Manually correct videos with quiescent animals at beginning of video
 
 #### 2_analyze_fluorescein_images.ipynb
-- Examine experimental image to see which encoding best captures differences in color
+- Examine experimental image to see which encoding best captures differences in color (Result: Saturation channel from HSV encoding)
 - Bin experimental photographs into 1mm x 1mm segments. This is done to normalize between photos that are a different number of pixels wide. Each bin is represented by the mean saturation value (S) of all pixels within that 1mm x 1mm segment. Save these reduced data files into a new folder.
 - Subtract the Saturation value in the blank image from the corresponding experiment image for each experiment series. This is done to correct for potential differences in lighting between photographs or experiments.
 - Similarly, subtract the Saturation value in the blank image from the corresponding experiment image for each standardization image.
@@ -74,3 +75,17 @@ Data collected and analyzed in this manuscript can currently be found in this [G
 #### 7_run_model.ipynb
 - Run simulation tasks using empirical data from starved animals
 - Run simulation tasks using empirical data from fed animals
+
+### Figure Generation Code:
+Each figure code file generates the figure(s) named in the title (`S` marks supplemental figures)
+- **F_plot_figure_1.ipynb**
+- **F_plot_figure_2.ipynb**
+- **F_plot_figure_3.ipynb**
+- **F_plot_figure_4.ipynb**
+- **F_plot_figure_S1.ipynb**
+- **F_plot_figure_S2.ipynb**
+- **F_plot_figure_S3_S4.ipynb**
+- **F_plot_figure_S5.ipynb**
+- **F_plot_figure_S6.ipynb**
+- **F_plot_figure_S7.ipynb**
+- **eleanor_constants.py** (colors used in all figures)
